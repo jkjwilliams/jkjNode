@@ -1,0 +1,24 @@
+<div ng-controller="homeController as home" class="blkbkgd">
+    <div class="jumbotron blkbkgd">
+        <img src="images/home/pheasant.JPG" alt="Pheasant" style="height: auto; width: 250px;" />
+        <img src="images/home/tractor.JPG" alt="Tractor" style="height: auto; width: 250px;" />
+        <img src="images/home/archery.JPG" alt="Opening Day" style="height: auto; width: 250px;" />
+        <img src="images/home/cabin.JPG" alt="Cabin" style="height: auto; width: 250px;" />
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div id="ourmanna-verse">Loading...</div>
+            <script src="http://www.ourmanna.com/verses/api/js/?order=random" type="text/javascript"></script>
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-6">
+            <div style="text-align:center;">
+                <img src="images/home/duck-hunt.JPG" alt="Shooting Birds" class="img-rounded" style="height: 140px; width: 140px;" />
+                <img src="images/home/duke-duck.JPG" alt="Got one" class="img-circle" style="height: 140px; width: 140px;" />
+            </div>
+            <p>{{ home.siteMessage }}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div ng-controller="editPictureController as edit">
+    <h1>{{ edit.title }}</h1>
+    <div>
+        <form>
+            <hr />
+            <dl class="dl-horizontal"></dl>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p ng-model="edit.picture.title">{{edit.picture.title}}</p>
+                    <p ng-model="edit.picture.shortName">{{edit.picture.shortName}}</p>
+                    <p><input type="text" ng-model="edit.picture.dateTaken" value="{{edit.picture.dateTaken | date: medium}}"></p>
+                    <p ng-model="edit.picture.cameraMaker">{{edit.picture.cameraMaker}}</p>
+                    <p>Processed: {{edit.picture.processed}}</p>
+                    <p></p>
+                    <input type="hidden" ng-value="{{edit.picture.cameraModel}}" />
+                    <input type="hidden" ng-value="{{edit.picture.fileName}}" />
+                    <input type="hidden" ng-value="{{edit.picture.id}}" />
+                    <input type="hidden" ng-value="{{edit.picture.programName}}" />
+                    <input type="hidden" ng-value="{{edit.picture.rawThumbnail}}" />
+                    <input type="hidden" ng-value="{{edit.picture.wildlife}}" />
+                </div>
+                <moon-phase class="col-lg-4" ng-model="edit.moon"></moon-phase>
+                <jkj-location class="col-lg-4" locations="edit.locations" location="edit.location"></jkj-location>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <img class="img-responsive" ng-model="edit.picture.rawImage" ng-src="data:image/jpg;base64, {{edit.picture.rawImage}}" id="{{edit.picture.id}}" />
+                </div>
+                <div class="col-lg-3">
+                    <div wildlife animal-type="edit.animalType" animal-types="edit.animalTypes" animal="edit.wildlife"></div>
+                    <p>
+                        <input type="submit" value="Update" class="btn btn-default" ng-click="edit.update(edit.picture, edit.wildlife)" />
+                        <input id="deletePicture" type="button" value="Delete" class="btn btn-default" ng-click="edit.delete(edit.picture.id)" />
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

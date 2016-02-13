@@ -1,0 +1,258 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*background: #000000;*/
+    background: black url("/images/camo.jpg") repeat center;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+    color: #000;
+}
+
+.header{
+    background: #526525;
+    color: #000;
+}
+
+.header a li{
+    background: #526525;
+    color: #000;
+}
+
+.header a:hover{
+    background: #655824;
+}
+
+.header a:active{
+    background: #655824;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.headLink{
+    color: #fff;
+}
+
+.headLink:hover{
+    color: #000;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.blktext{
+    color: #000;
+}
+
+.greenbkgd{
+    background: #526525;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+.greenbkgd a li ul{
+    background: #526525;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+.blkbkgd{
+    background: #000;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+#view-picture-canvas{
+    height:600px;
+    overflow: hidden;
+}
+
+#viewPicThumbnail{
+    height:600px;
+    overflow: scroll;
+    padding-bottom: 25px;
+}
+
+#map-canvas {
+    height: 600px;
+}
+
+#picture-canvas{
+    
+    width:375px;
+    min-height:250px;
+    height:600px;
+    overflow: hidden;
+}
+
+.blkbkgd input[type=text]{
+    color: #000;
+}
+
+.infobox{
+    height: 125px;
+    width: auto;
+    color: #000;
+}
+
+.infopicbox{
+    height: 75px;
+    width: auto;
+    color: #000;
+}
+
+/*#picture-drop{
+    border:2px dotted #0B85A1;
+    width:375px;
+    min-height:250px;
+    height:auto;
+    color:#92AAB0;
+    text-align:left;vertical-align:middle;
+    padding:10px 10px 10px 10px;
+    margin-bottom:10px;
+    font-size:200%;
+    display: none;
+}*/
+
+.picture-area{
+    width:390px;
+    height:600px;
+    overflow: scroll;
+    color:#92AAB0;
+    text-align:left;vertical-align:middle;
+    /*padding: 5px 5px 15px 5px;*/
+    padding-bottom: 25px;
+    display:none;
+}
+
+.large-picture{
+    width: auto;
+    height: 650px;
+}
+
+.wildlife-view{
+    border: 1px solid red;
+    background-color: #000;
+    color: #fff;
+}
+
+.filename{
+    display:inline-block;
+    vertical-align:top;
+    width:250px;
+}
+
+.filesize{
+    display:inline-block;
+    vertical-align:top;
+    color:#30693D;
+    width:100px;
+    margin-left:10px;
+    margin-right:5px;
+}
+
+.abort{
+    background-color:#A8352F;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;display:inline-block;
+    color:#fff;
+    font-family:arial;font-size:13px;font-weight:normal;
+    padding:4px 15px;
+    cursor:pointer;
+    vertical-align:top
+}
+
+.thumbnail {
+    float: left;
+    border: 1px solid black;
+}
+.thumbnailimg {
+    width: 114px;
+    height: 85px; 
+    position:relative;
+}
+
+.thumbnaili {
+    position:absolute;
+    /*width: 20px;
+    height: 20px;*/
+    top: 95px;
+    /*left:5px;*/
+    z-index: 1;
+    /*background-color: green;
+    color: white;*/
+}
+
+.medium-picture{
+    padding: 4px 4px 4px 4px;
+    float: left;
+    width: auto;
+    height: 270px;
+}
+
+#ourmanna-verse {
+    padding: 10px;
+    margin: 10px;
+    color: #eee;
+    background: #316524;
+    /*border-color: #0B935A;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#mannaverse {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /*color: #ddd;*/
+}
+
+#mannaverse-reference:before {
+    content: "- ";
+    /*color: #ddd;*/
+}
+
+#mannaverse-reference {
+    text-align: right;
+    font-size: 12px;
+    /*color: #ddd;*/
+}
+
+#mannaverse-version {
+    /*color: #ddd;*/
+}
+
+/*.large-picture{
+    width: auto;
+    height: 650px;
+}
+
+.greenbkgd{
+    background: #526525;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}
+
+.greenbkgd a li ul{
+    background: #526525;
+    color: #fff;
+    padding: 20px 0 20px 0;
+}*/
