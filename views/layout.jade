@@ -1,0 +1,39 @@
+doctype html
+html(ng-app="app")
+  head
+    base(href="/")
+    meta(charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge")
+    title= title
+    meta(content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='/libs/toastr/toastr.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    script(src='/libs/jquery/dist/jquery.min.js')
+    script(src='/libs/toastr/toastr.min.js')
+    
+  body
+    div(class="container")
+        div(class="masthead")
+            ul(class="nav nav-justified greenbkgd")
+                li(class="active") 
+                    a(href="/" class="headLink") Home
+                li
+                    a(href="/map" class="headLink") Map
+                li 
+                    a(href="/pictures" class="headLink") Pictures
+                li
+                    a(href="/reports" class="headLink") Reports
+                li
+                    a(href="/register" class="headLink") Register
+                li
+                    a(href="/login" class="headLink") Log In
+    
+    div(class="container body-content blkbkgd")            
+        block body
+    
+    footer(class="container nav nav-justified greenbkgd")
+        p(style="text-align: center;") &copy; 2016 - jkjwilliams.net
+
+    
